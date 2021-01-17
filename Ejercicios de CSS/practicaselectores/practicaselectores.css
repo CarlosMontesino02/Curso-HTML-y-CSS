@@ -1,0 +1,45 @@
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.primera {
+  background-color: red;
+  color: white;
+}
+
+#fila .gb {
+  background-color: grey;
+  font-size: 2em;
+  text-align: center;
+}
+
+#listas li {
+  color: red;
+}
+
+#cinco {
+  background-color: yellow;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0px auto;
+  width: 50%;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+[colspan="2"],
+[colspan="3"] {
+  background-color: blue;
+}
