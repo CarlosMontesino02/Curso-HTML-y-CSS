@@ -1,0 +1,69 @@
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+/*Con esto, establezco colores a los diferentes estados de los links
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover { ---> este le da color al pasasr el ratón por encima
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+} */
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+tbody tr td:first-child {
+  background-color: green;
+}
+tbody tr:nth-child(3) th:nth-child(2) {
+  background-color: yellow;
+}
+
+tr th:last-child:hover,
+tr td:last-child:hover {
+  font-size: 2em;
+}
+
+thead tr th::first-letter {
+  font-size: 2em;
+}
+
+input:required {
+  border: 1px solid red;
+  padding: 10px;
+}
+
+label::after {
+  color: red;
+  content: "*";
+}
