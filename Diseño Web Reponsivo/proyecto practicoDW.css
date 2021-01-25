@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blue;
+}
+
+p {
+  margin: 0px;
+  padding: 0.4em;
+}
+
+.resultados{
+  color: white;
+  font-style: italic;
+}
+.titulos {
+  color: rgb(255,0,239);
+}
+
+.item {
+  display: inline-block;
+  padding: 0.5em;
+  display: none;
+}
+
+.container {
+  font-family: serif, bold;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.novedades {
+  display: flex;
+}
+
+.novedades > * {
+  width: 25%;
+}
+
+main {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(0,205,255) ;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section {
+  width: 100%;
+}
+
+section.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.images img {
+  height: 80px;
+  width: 30%;
+}
+
+section.main {
+    padding: 1em;
+  font-weight: bolder;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 560px) {
+  nav {
+    display: flex;
+  }
+
+section.main,section.images {
+    width: 50%;
+  }
+
+  section.images img {
+    width: 50%;
+    height: 25%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .hidden {
+    display: block;
+  }
+
+  section.images {
+    order: 1;
+  }
+
+  section.main {
+    order: 2;
+  }
+
+  section.images img {
+    height: 33%;
+    width: 33%;
+  }
+}

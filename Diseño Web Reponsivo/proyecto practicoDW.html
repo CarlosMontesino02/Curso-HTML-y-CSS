@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="proyecto practicoDW.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="titulos">
+        <p>Esta página responde a lso cambios de resolución.</p>
+        <nav>
+          <div class="item">CREADOR</div>
+          <div class="item">API</div>
+          <div class="item">FAQ</div>
+        </nav>
+      </header>
+      <main>
+        <section class="main">
+          <div>
+            <h1 class="titulos">E-SPORTS</h1>
+          </div>
+          <div>
+            <p>Página desarrollada por @CarlosMontesino02 para Jaime Canillas.</p>
+            <p>En está páginas podrás ver las últimas noticias de e-sports y sus novedades.</p>
+            <p>Los deportes electrónicos, también llamados ciberdeportes1​ o esports,​ son competiciones de videojuegos que se han convertido en eventos de gran popularidad.​ Por lo general los deportes electrónicos son competiciones de videojuegos multijugador, particularmente entre jugadores profesionales. Los géneros más comunes en los videojuegos asociados a los esports son: estrategia en tiempo real, disparos en primera persona y arenas de batalla multijugador en línea (mejor conocido por sus siglas en inglés MOBA, Videojuego multijugador de arena de batalla en línea).</p>
+          </div>
+        </section>
+        <section class="images">
+          <img src="img/1.jpg" />
+          <img src="img/2.jpg" />
+          <img src="img/3.png" />
+          <img src="img/4.png" />
+          <img src="img/5.png" />
+          <img src="img/6.jpg" />
+          <img src="img/7.jpg" />
+          <img src="img/8.png" class="hidden" />
+          <img src="img/9.jpg" />
+        </section>
+      </main>
+      <section class="novedades">
+        <h2 class="titulos">NOVEDADES</h2>
+        <article>
+          <h3 class="titulos">Última hora</h3>
+          <p class="resultados">
+            Astralis-Navi 3-0 CS:GO
+          </p>
+        </article>
+        <article>
+          <h3 class="titulos">Hace una semana</h3>
+          <p class="resultados">
+            G2-Cloud9 2-1 LOL
+          </p>
+        </article>
+        <article>
+          <h3 class="titulos">Hace un mes</h3>
+          <p class="resultados">
+            MADLIONS-NiP 3-0 VALORANT
+          </p>
+        </article>
+      </section>
+    </div>
+    <!--Aquí tenemos el scrip que muestra la imagen con la clase "hidden" cuando la anchura sea mayor de 560 -->
+    <script>
+        $(function() {
+            $(".icon").click(function() {
+            $(".menu_item").toggle();
+            });
+            $(window).resize(function() {
+            var anchura = $(this).width();
+            if (anchura > 560) {
+                $(".menu_item").show();
+            }
+            });
+        });
+    </script>
+  </body>
+</html>
